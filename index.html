@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wheelOfFortune">
+      <canvas id="wheel" width="400" height="400"></canvas>
+      <div id="spin">SPIN</div>
+    </div>
+    <br />
+    <button onClick='addBtn()' id='wheelPlus'>+</button>
+    <button onClick='remBtn()' id='wheelMinus'>-</button>
+   
+      <form action="" method="post" id="setupForm">
+       
+        
+      <input type="text" value="red" name="color1" placeholder="inop">color 1</input>
+      <input type="text" value="black" name="color2" placeholder="inop">color 2</input>
+      
+      
+</form>
+    </div>
+    <br>
+    <div>
+   
+   
+      <textarea name="asObject" id="setupAsObject" cols="30" rows="10" 
+       placeholder='{ "color": "black", "label": "WIN" }'></textarea>
+    <button onclick="submitObject()">Update</button>    ms''
+    
+    </div>
+    <br>
+    <div>
+      <input type="button" id="dwn-btn" value="Download generated js file" />
+    </div>
+    <script src="https://github.com/eligrey/FileSaver.js/blob/master/dist/FileSaver.min.js"></script>
+    <script src="spinwheel.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
+
